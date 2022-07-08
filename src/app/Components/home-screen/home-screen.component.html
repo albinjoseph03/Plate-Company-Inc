@@ -1,0 +1,22 @@
+<div *ngIf = "isClicked != 1">
+
+<app-card-of-products (event) = "isclicked($event)" (event1) = "receiveMessage($event)"></app-card-of-products>
+
+
+
+<router-outlet></router-outlet>
+
+</div>
+
+<div *ngIf = "prodId == 1">
+    <app-plate1></app-plate1>
+</div>
+<div *ngIf = "prodId == 2">
+    <app-plate2></app-plate2>
+</div>
+<div *ngIf = "prodId == 3">
+    <app-plate3></app-plate3>
+</div>
+<div *ngIf = "prodId == 4">
+    <app-plate4></app-plate4>
+</div>
